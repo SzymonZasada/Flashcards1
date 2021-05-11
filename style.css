@@ -1,0 +1,59 @@
+
+body {
+    background-image: url('zdj.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+
+.Title{
+    text-align: center;
+    font-family: Arial;
+}
+
+.Center {
+    justify-content: center;
+    display: grid;
+    grid-template-rows: 200px 200px 200px;
+    grid-template-columns: 200px 200px 200px;
+}
+
+
+.card{
+    color:white;
+}
+p{
+    font-size: x-large;
+    font-family: Arial;
+}
+.box{
+    transition: all 2s;
+    position:absolute;
+    backface-visibility: hidden;
+    border: 1px solid #555;
+    height: 190px;
+    width: 190px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.card-back{
+    transform:rotateY(180deg);
+    background: #a0a0a0;
+
+}
+.card-front{
+    background-color: #555555;
+
+}
+.card:hover .card-front {
+    transform: rotateY(-180deg);
+
+}
+.card:hover .card-back {
+    transform: rotateY(0);//
+
+}
+
